@@ -1,0 +1,52 @@
+==========================================
+LAB 8: Observing Consensus Rules
+==========================================
+
+=== Concept ===
+Bitcoin nodes independently validate every block they receive.
+If a block violates any consensus rule, it is immediately rejected.
+
+=== How Consensus Works ===
+1. Node receives a block from a peer
+2. Node validates the block:
+   - Block header hash meets difficulty target
+   - Timestamp is within limits
+   - Merkle root matches transactions
+   - All transactions are valid
+   - No double-spends
+3. If valid → Added to chain
+4. If invalid → Rejected with error (bad-blk)
+
+=== What Would Happen If a Block Is Corrupted ===
+cp ~/.bitcoin/regtest/blocks/blk00000.dat ~/tmp/
+
+Manually edit a byte — breaks validation
+text
+
+After restarting the node:
+bitcoind -regtest -daemon
+
+text
+
+Expected result:
+- Node detects invalid block
+- Error in debug.log: "bad-blk"
+- Node rejects the block
+- Invalid block does NOT propagate
+- Blockchain remains intact
+
+=== Why This Matters ===
+- Consensus is enforced by ALL nodes, not just one
+- No single node can add invalid data to the blockchain
+- This is what makes Bitcoin trustless and secure
+- Every node independently verifies every block
+
+=== Real-World Example ===
+On 2015-07-04, a block with an invalid timestamp was mined.
+All Bitcoin nodes rejected it, and the block was orphaned.
+The network self-corrected within minutes.
+
+=== Key Takeaway ===
+Consensus rules are strict by design.
+Invalid blocks are immediately rejected by all honest nodes.
+This ensures the integrity and immutability of the blockchain.

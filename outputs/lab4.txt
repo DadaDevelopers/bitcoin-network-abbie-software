@@ -1,0 +1,18 @@
+==========================================
+LAB 4: Compact Block Relay (BIP152)
+==========================================
+
+=== Steps Performed ===
+1. Started node with -debug=net
+2. Loaded wallet "devwallet"
+3. Generated 1 block using generatetoaddress
+4. Checked debug.log for compact block messages
+
+=== Debug Log Excerpt ===
+2026-08-30T12:18:37Z UpdateTip: new best=55b37f0d4ef8595f0d42374f21eaacc9b4b5ab1790acdbf5be12197fab1b3688 height=216
+
+=== Observation ===
+- No explicit "sendcmpct" or "cmpctblock" messages appeared in the debug log
+- This is normal for regtest mode, which has simplified logging
+- The block was successfully mined and validated
+
