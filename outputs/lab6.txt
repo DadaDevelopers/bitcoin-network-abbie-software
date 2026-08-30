@@ -1,0 +1,6 @@
+Block Hash: 55b37f0d4ef8595f0d42374f21eaacc9b4b5ab1790acdbf5be12197fab1b3688
+Block Height: 216
+Number of transactions: 1
+Merkle Root (from block): 3b851341b0bec4ca31d254fc7b41dcbc3f6f10d209ecfb38de6c3ff493515b11
+Merkle Root (computed):    3b851341b0bec4ca31d254fc7b41dcbc3f6f10d209ecfb38de6c3ff493515b11
+Match: True

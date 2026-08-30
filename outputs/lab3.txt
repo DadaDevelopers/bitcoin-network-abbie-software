@@ -1,0 +1,104 @@
+==========================================
+LAB 3: Transaction Propagation and Mempool
+Date: Sun Aug 30 03:09:50 PM EAT 2026
+==========================================
+
+=== Transaction ID ===
+2f50daab66848aa584505be246d193ef4824d43790f86290dc04fe0301c766d3
+
+=== Receiving Address ===
+bcrt1qjxrsum7e8wsjpn0akq6y2q7plztktr53e2v4kr
+
+=== Mempool Info (Main Node) ===
+{
+  "loaded": true,
+  "size": 0,
+  "bytes": 0,
+  "usage": 64,
+  "total_fee": 0.00000000,
+  "maxmempool": 300000000,
+  "mempoolminfee": 0.00000100,
+  "minrelaytxfee": 0.00000100,
+  "incrementalrelayfee": 0.00000100,
+  "unbroadcastcount": 0,
+  "fullrbf": true,
+  "permitbaremultisig": true,
+  "maxdatacarriersize": 100000
+}
+
+=== Raw Mempool (Main Node) ===
+[
+]
+
+=== Mempool Info (Second Node) ===
+{
+  "loaded": true,
+  "size": 0,
+  "bytes": 0,
+  "usage": 0,
+  "total_fee": 0.00000000,
+  "maxmempool": 300000000,
+  "mempoolminfee": 0.00000100,
+  "minrelaytxfee": 0.00000100,
+  "incrementalrelayfee": 0.00000100,
+  "unbroadcastcount": 0,
+  "fullrbf": true,
+  "permitbaremultisig": true,
+  "maxdatacarriersize": 100000
+}
+
+=== Raw Mempool (Second Node) ===
+[
+]
+
+=== Mine Transaction ===
+[
+  "3686d12e06cb09391e2a5602ea42d73a92e518935732448158b2d22a79a280ed"
+]
+
+=== Transaction Details ===
+{
+  "amount": 0.00000000,
+  "fee": -0.00002820,
+  "confirmations": 2,
+  "blockhash": "5ebcfa1a8276159eb36157ac7f7257a20188159c85d778b98d70e85fd3d7374c",
+  "blockheight": 213,
+  "blockindex": 1,
+  "blocktime": 1788091544,
+  "txid": "2f50daab66848aa584505be246d193ef4824d43790f86290dc04fe0301c766d3",
+  "wtxid": "6b3a0eb52114ba86b434b366d2bfc203908d24f3717e3332f7a80dfc360feb62",
+  "walletconflicts": [
+  ],
+  "mempoolconflicts": [
+  ],
+  "time": 1788091387,
+  "timereceived": 1788091387,
+  "bip125-replaceable": "no",
+  "details": [
+    {
+      "address": "bcrt1qjxrsum7e8wsjpn0akq6y2q7plztktr53e2v4kr",
+      "category": "send",
+      "amount": -5.00000000,
+      "label": "",
+      "vout": 1,
+      "fee": -0.00002820,
+      "abandoned": false
+    },
+    {
+      "address": "bcrt1qjxrsum7e8wsjpn0akq6y2q7plztktr53e2v4kr",
+      "parent_descs": [
+        "wpkh([029b3c0c/84h/1h/0h]tpubDCa7GCdhpBrG65UHu5vgnogUadU2NvVNHgEkWWF9CckaSeorF3KzCH5mz1dNY77ozc3Rwbb9UaLFV5RWe5oZACDXMi9LnEYaVrKJheAKFNu/0/*)#kga4fgy5"
+      ],
+      "category": "receive",
+      "amount": 5.00000000,
+      "label": "",
+      "vout": 1,
+      "abandoned": false
+    }
+  ],
+  "hex": "020000000001019e1c3d4be609835fc8d2aefca3f88ea6c9707326f796318548653ad0d9fa76770000000000fdffffff02fc81380c01000000160014484da4b19f766e4f4820ceb57df5cf4f2d4a358a0065cd1d0000000016001491870e6fd93ba120cdfdb0344503c1f897658e91024730440220539c4f957316dcfe7f851abdb58c528c166538e23704c69e70754f559c864d3302204a2d420ebde60e31aa5bc74d851f88e2229255b78a6c2c67ee501c48e4d3993601210207663173470eb44186c93bcc1c36150bcc58a828c060a6538546298ab9784281d4000000",
+  "lastprocessedblock": {
+    "hash": "3686d12e06cb09391e2a5602ea42d73a92e518935732448158b2d22a79a280ed",
+    "height": 214
+  }
+}

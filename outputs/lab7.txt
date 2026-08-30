@@ -1,0 +1,15 @@
+pybloom_live installed ✅
+
+=== Membership Tests ===
+  Contains 'txid_123456'?   True
+  Contains 'fake_txid'?     False
+  Contains 'address_abc123'? True
+
+=== Filter Stats ===
+  Bitarray length: 14380 bits
+  Bitarray (first 80 bits): bitarray('0000000000000000000000000000000000000000000000000000000000000000000000...
+
+=== BIP37 Bloom Filters ===
+  Purpose: SPV wallets filter blocks to find relevant transactions
+  Privacy Issue: Clients reveal their interests to peers
+  Status: Deprecated in favor of BIP157/158 (Compact Block Filters)

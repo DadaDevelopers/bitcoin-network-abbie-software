@@ -1,0 +1,13 @@
+==========================================
+LAB 5: Compact Block Filters (BIP157/158)
+Date: Sun Aug 30 03:26:26 PM EAT 2026
+==========================================
+
+=== Block Hash ===
+53f6ec72b1275303edb950dc6c574988bae392fad9dd13b1899b2a7df365d49a
+
+=== Block Filter ===
+{
+  "filter": "018e5a28",
+  "header": "c1e71fd4f018d6b08efa9f1c5acf70e6667fea0b0dbce25a2ee345d71f055722"
+}
